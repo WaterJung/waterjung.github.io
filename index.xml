@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>🏀WaterJung的博客</title>
+    <link>https://waterjung.github.io/</link>
+    <description>Recent content on 🏀WaterJung的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Fri, 31 Jan 2020 21:15:25 +0800</lastBuildDate>
+    
+	<atom:link href="https://waterjung.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>One</title>
+      <link>https://waterjung.github.io/posts/one/</link>
+      <pubDate>Fri, 31 Jan 2020 21:15:25 +0800</pubDate>
+      
+      <guid>https://waterjung.github.io/posts/one/</guid>
+      <description>&lt;p&gt;啊莉莉送来的图片👍&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Desc1</title>
+      <link>https://waterjung.github.io/about/desc1/</link>
+      <pubDate>Fri, 31 Jan 2020 21:06:37 +0800</pubDate>
+      
+      <guid>https://waterjung.github.io/about/desc1/</guid>
+      <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于</title>
+      <link>https://waterjung.github.io/about/desc/</link>
+      <pubDate>Fri, 31 Jan 2020 21:01:01 +0800</pubDate>
+      
+      <guid>https://waterjung.github.io/about/desc/</guid>
+      <description>你好，我是杨文俊 这是我的博客。 </description>
+    </item>
+    
+  </channel>
+</rss>
