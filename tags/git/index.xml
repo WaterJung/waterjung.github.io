@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 🏀WaterJung的博客</title>
-    <link>https://waterjung.github.io/posts/</link>
-    <description>Recent content in Posts on 🏀WaterJung的博客</description>
+    <title>git on 🏀WaterJung的博客</title>
+    <link>https://waterjung.github.io/tags/git/</link>
+    <description>Recent content in git on 🏀WaterJung的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <lastBuildDate>Sat, 01 Feb 2020 10:15:44 +0800</lastBuildDate>
     
-	<atom:link href="https://waterjung.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://waterjung.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>https://waterjung.github.io/posts/two/</guid>
       <description>&lt;h3 id=&#34;基于hugo个人博客的搭建&#34;&gt;基于hugo个人博客的搭建&lt;/h3&gt;</description>
-    </item>
-    
-    <item>
-      <title>👗啊莉莉的分享</title>
-      <link>https://waterjung.github.io/posts/one/</link>
-      <pubDate>Fri, 31 Jan 2020 21:15:25 +0800</pubDate>
-      
-      <guid>https://waterjung.github.io/posts/one/</guid>
-      <description>&lt;p&gt;啊莉莉送来的图片👍&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -6,27 +6,27 @@
     <description>Recent content on 🏀WaterJung的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 31 Jan 2020 21:15:25 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 01 Feb 2020 10:15:44 +0800</lastBuildDate>
     
 	<atom:link href="https://waterjung.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>One</title>
+      <title>💻hugo搭建个人博客并部署到github</title>
+      <link>https://waterjung.github.io/posts/two/</link>
+      <pubDate>Sat, 01 Feb 2020 10:15:44 +0800</pubDate>
+      
+      <guid>https://waterjung.github.io/posts/two/</guid>
+      <description>&lt;h3 id=&#34;基于hugo个人博客的搭建&#34;&gt;基于hugo个人博客的搭建&lt;/h3&gt;</description>
+    </item>
+    
+    <item>
+      <title>👗啊莉莉的分享</title>
       <link>https://waterjung.github.io/posts/one/</link>
       <pubDate>Fri, 31 Jan 2020 21:15:25 +0800</pubDate>
       
       <guid>https://waterjung.github.io/posts/one/</guid>
       <description>&lt;p&gt;啊莉莉送来的图片👍&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Desc1</title>
-      <link>https://waterjung.github.io/about/desc1/</link>
-      <pubDate>Fri, 31 Jan 2020 21:06:37 +0800</pubDate>
-      
-      <guid>https://waterjung.github.io/about/desc1/</guid>
-      <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;</description>
     </item>
     
     <item>

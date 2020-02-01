@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+💻hugo搭建个人博客并部署到github
+</title>
+
+    
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+
+  
+  <meta name="author" content="waterjung" />
+  <meta name="description" content="基于hugo个人博客的搭建" />
+
+
+
+<meta name="generator" content="Hugo 0.62.2" />
+
+<link rel="canonical" href="https://waterjung.github.io/posts/two/" />
+
+
+<meta property="og:title" content="💻hugo搭建个人博客并部署到github" />
+<meta property="og:description" content="基于hugo个人博客的搭建" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://waterjung.github.io/posts/two/" />
+<meta property="article:published_time" content="2020-02-01T10:15:44+08:00" />
+<meta property="article:modified_time" content="2020-02-01T10:15:44+08:00" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="💻hugo搭建个人博客并部署到github"/>
+<meta name="twitter:description" content="基于hugo个人博客的搭建"/>
+
+
+<link rel="stylesheet" href="/css/github-markdown.css" />
+<link rel="stylesheet" href="/css/semantic.min.css" />
+<link rel="stylesheet" href="/css/site.css" />
+
+
+<style>
+  a {
+    color: seagreen !important;
+  }
+</style>
+
+
+
+<style>
+  .inverted a {
+     color: darkseagreen !important;
+  }
+</style>
+
+
+  </head>
+
+  
+  <body style="background-image: url(/img/background1.jpg);">
+  
+    <div class="flip-container">
+      <div class="flipper">
+        <section class="front">
+          
+<nav class="ui secondary inverted menu dream-menu">
+
+  <div class="item">
+    <i class="large link bullseye icon dream-flip-toggle" title="翻转！"></i>
+  </div>
+  <div class="item">
+    <i class="large link home icon" title="首页" onclick="window.location.href = 'https:\/\/waterjung.github.io'"></i>
+  </div>
+  <div class="item">
+    <i id="theme-switch" class="large link icon" onclick="themeSwitch()"></i>
+  </div>
+</nav>
+
+          
+<div class="ui centered relaxed grid dream-grid">
+  <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single">
+
+    <section class="ui top attached segment" id="dream-save-post-as-img">
+      <header style="margin-top: 0 !important;">
+        <h2 class="ui header">
+          💻hugo搭建个人博客并部署到github
+          <div class="sub header">@ waterjung · Saturday, Feb 1, 2020 · 2 分钟阅读 · 更新于 Feb 1, 2020</div>
+        </h2>
+      </header>
+      <article style="margin-top: 2rem;"><h3 id="基于hugo个人博客的搭建">基于hugo个人博客的搭建</h3>
+<p><a href="https://waterjung.github.io">点这里转到我的博客</a></p>
+<h1 id="介绍">介绍</h1>
+<h4 id="hugohttpsgohugoio是一个用go编写的静态站点生成器由于具有丰富的主题资源和惊人的生成速度而备受青睐本博客即是基于hugohttpsgohugoio搭建"><a href="https://gohugo.io/">Hugo</a>是一个用Go编写的静态站点生成器，由于具有丰富的主题资源和惊人的生成速度而备受青睐。本博客即是基于<a href="https://gohugo.io/">Hugo</a>搭建</h4>
+<h1 id="安装hugo">安装Hugo</h1>
+<h4 id="方式一">方式一：</h4>
+<ul>
+<li>hugo是托管在GitHub上的项目，我们可以直接到到<a href="https://github.com/gohugoio/hugo/releases">这里下载</a>安装
+根据自己的系统选择合适的hugo版本，我的是Win10 64位，所以选择下图版本
+<img src="https://s2.ax1x.com/2020/02/01/18IXpq.png" alt="18IXpq.png"></li>
+</ul>
+<blockquote>
+<p>PS:hugo版本随时间更新，不一定为此篇文章的版本，大家可以选择当前最新版本进行下载</p>
+</blockquote>
+<blockquote>
+<p>下载后对压缩包进行解压得到hugo.exe，并把它配置到环境变量中。如果输入命令出现下图则说明可以使用hugo了。</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">hugo version
+</code></pre></div><p><img src="https://s2.ax1x.com/2020/02/01/187J0S.png" alt="187J0S.png"></p>
+<h4 id="方式二">方式二：</h4>
+<ul>
+<li>如果你是macOS用户，请使用Homebrew快速安装</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">brew install hugo
+</code></pre></div><ul>
+<li>如果你是Debian或Ubuntu用户，请使用apt快速安装</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">sudo apt-get install hugo
+</code></pre></div><ul>
+<li>如果你是Windows用户，可以使用Chocolatey或者Scoop快速安装，取决于你使用什么包管理</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">choco install hugo -confirm
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">scoop install hugo
+</code></pre></div><h1 id="生成本地站点">生成本地站点</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">hugo new site 路径/站点名称
+</code></pre></div><blockquote>
+<p>hugo new site 是新建一个网站的命令，后添加路径和站点名称；在当前路径下生成站点，路径可以省略。</p>
+</blockquote>
+<p><img src="https://s2.ax1x.com/2020/02/01/18Xnk8.png" alt="18Xnk8.png"></p>
+<ul>
+<li>创建完成后，在 blog 文件夹下会生成以下文件结构：</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">.
+├── archetypes # 存放生成博客的模版
+├── assets # 存放被 Hugo Pipes 处理的文件
+├── config # 存放 hugo 配置文件 支持 JSON YAML TOML 三种格式配置文件
+├── content # 存放 markdown 文件
+├── data # 存放 Hugo 处理的数据
+├── layouts # 存放布局文件
+├── static # 存放静态文件 图片 CSS JS文件
+└── themes # 存放主题
+</code></pre></div><ul>
+<li>这样就快速地生成了一个空白的站点，这个时候如果你输入 hugo server 的命令（运行Hugo），然后在浏览器里输入 localhost:1313 会发现是空白的，主要是因为里面什么东西都没有，需要我们自己下载主题。</li>
+</ul>
+<h1 id="下载皮肤主题">下载皮肤主题</h1>
+<ul>
+<li>在<a href="https://themes.gohugo.io/">Hugo主题</a>里面挑选自己喜欢的主题，跳转到相关的 github 页面，clone 到自己的 blog/themes 文件夹当中。</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">cd myblog
+cd themes
+git clone https://github.com/g1eny0ung/hugo-theme-dream.git
+</code></pre></div><h1 id="站点配置">站点配置</h1>
+<ul>
+<li>进入 myblog/themes/hugo-theme-dream/exampleSite 文件夹，将 config.tom 文件、/hugo-theme-dream下的
+static和i18n文件一同拷贝到根目录下</li>
+</ul>
+<blockquote>
+<p>打开此配置文件</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">baseurl = &#34;https://example.com&#34;  
+languageCode = &#34;en&#34; //语言  中文则选择输入zh
+defaultContentLanguage = &#34;en&#34;
+title = &#34;Hugo Theme Dream&#34; // 博客的标题
+theme = &#34;hugo-theme-dream&#34; //主题
+
+# copyright = &#34;&#34; //版权
+
+# googleAnalytics = &#34;&#34; //网站分析，我们用不到，默认注释掉
+
+# disqusShortname = &#34;&#34;  
+
+# enableRobotsTXT = true
+
+[params]
+  #background = &#34;black&#34;  //背景颜色
+  backgroundImage = &#34;/img/background.jpg&#34; //背景图片
+  linkColor = &#34;seagreen&#34;
+
+  author = &#34;Yue Yang&#34; //作者
+  # description = &#34;&#34; //描述
+  avatar = &#34;/img/avatar.jpg&#34; //头像
+  motto = &#34;Motto&#34; //
+  
+  email = &#34;g1enyy0ung@gmail.com&#34;
+  # github = &#34;&#34;
+  # linkedin = &#34;&#34;
+  # codepen = &#34;&#34;
+  # stackoverflow = &#34;&#34;
+
+  siteStartYear = 2016 //年份起始
+
+  # favicon = &#34;/favicon.ico&#34;
+
+  # dark mode
+  darkLinkColor = &#34;darkseagreen&#34;
+  darkNav = true 
+  dark404Button = true
+
+</code></pre></div><blockquote>
+<p>ps:背景和背景图片二选一，背景图片放在/static/img 下</p>
+</blockquote>
+<h1 id="写一篇文章">写一篇文章</h1>
+<p>新建一篇文章比较简单，命令如下：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">hugo new site posts/xxx.md
+</code></pre></div><blockquote>
+<p>ps：这个命令会使用模板创建文件，首先查找用户的模板文件，没有就会查找主题的模板文件。</p>
+</blockquote>
+<blockquote>
+<p>文章的格式为markdown，很好上手，大家自行去探索。</p>
+</blockquote>
+<h1 id="启动-hugo">启动 Hugo</h1>
+<blockquote>
+<p>命令行输入以下命令，启动 Hugo :</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">hugo server
+</code></pre></div><p><img src="https://s2.ax1x.com/2020/02/01/1GSIT1.png" alt="1GSIT1.png"></p>
+<h3 id="效果如下图">效果如下图：</h3>
+<p><img src="https://s2.ax1x.com/2020/02/01/1GS7Y6.png" alt="1GS7Y6.png"></p>
+<h1 id="打包">打包</h1>
+<ul>
+<li>为了部署到线上，需要将 Markdown 文件打包成 HTML 文件。打包命令如下，hugo-theme-dream 是主题名：</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">hugo -t hugo-theme-dream
+</code></pre></div><p><img src="https://s2.ax1x.com/2020/02/01/1GpXCV.png" alt="1GpXCV.png"></p>
+<blockquote>
+<p>此时在根目录下多了一个public文件夹</p>
+</blockquote>
+<h1 id="部署到-github-pages">部署到 Github Pages</h1>
+<ul>
+<li>打包之后就是纯 HTML 文件，理论上所有支持部署静态页面的网站都是支持的。</li>
+<li>详情请访问<a href="https://gohugo.io/hosting-and-deployment/">https://gohugo.io/hosting-and-deployment/</a></li>
+</ul>
+<h4 id="前提是去github创建一个以github用户名小写githubio的仓库">前提是去github创建一个以github用户名小写.github.io的仓库</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">下面这些是git命令
+cd <span style="color:#66d9ef">public</span> 
+
+git init 
+
+git add <span style="color:#f92672">.</span> 
+
+git commit <span style="color:#f92672">-</span>m <span style="color:#e6db74">&#34;我的 hugo 博客第一次提交&#34;</span>
+
+git remote add origin https<span style="color:#f92672">:</span><span style="color:#75715e">//github.com/github用户名/github用户名全小写.github.io.git
+</span><span style="color:#75715e"></span>
+git push <span style="color:#f92672">-</span>u origin master  输入用户名及密码
+</code></pre></div><p>友情链接：</p>
+<ul>
+<li><a href="https://imgchr.com/">图床</a></li>
+<li><a href="https://www.liaoxuefeng.com/wiki/896043488029600%3C/a%3E">git教程</a></li>
+</ul>
+<blockquote>
+<p>仅供参考，不作商业用途</p>
+</blockquote></article>
+    </section>
+
+    <footer class="ui attached segment dream-tags">
+      
+        
+          <a class="ui label" href="/tags/git" title="git">git</a>
+        
+          <a class="ui label" href="/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2" title="个人博客">个人博客</a>
+        
+      
+      <div
+        class="ui label"
+        style="float: right; background: #1b1c1d !important; cursor: pointer;"
+        onclick="savePostAsImg()">
+        <i class="save icon"></i> Save as image
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+  <div class="sixteen wide mobile sixteen wide tablet four wide computer column">
+    <article class="dream-header">
+  <section class="ui top attached center aligned segment">
+    <div class="ui small circular image">
+      
+        <img src="/img/avatar.jpg">
+      
+    </div>
+
+    <h3 class="ui header">WaterJung的博客<div class="sub header" style="margin-top: 0.5rem;">与其感慨路难行，不如马上出发。</div>
+    </h3>
+
+    <div class="ui horizontal list">
+      
+      <a class="item" href="/posts">
+        <i class="archive icon" title="归档"></i>
+      </a>
+      
+      <a class="item" href="/tags">
+        <i class="tags icon" title="所有标签"></i>
+      </a>
+      <a class="item" href="/categories">
+        <i class="th list icon" title="所有分类"></i>
+      </a>
+    </div>
+  </section>
+
+  
+  <section class="ui attached center aligned segment dream-tags">
+    
+      <a class="ui label" href="/tags/git" title="git">git</a>
+    
+      <a class="ui label" href="/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2" title="个人博客">个人博客</a>
+    
+      <a class="ui label" href="/tags/%E5%9B%BE%E7%89%87" title="图片">图片</a>
+    
+      <a class="ui label" href="/tags/%E6%91%98%E8%A6%81" title="摘要">摘要</a>
+    
+  </section>
+  
+
+  
+  <section class="ui attached segment dream-categories">
+    <div class="ui accordion">
+      
+        <div class="title">
+          <i class="dropdown icon"></i>
+          <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0" class="item">学习笔记</a>
+        </div>
+        <div class="content">
+          <div class="ui list">
+          
+            <div class="item">
+              <div class="content">
+                <a href="https://waterjung.github.io/posts/two/" class="item">💻hugo搭建个人博客并部署到github</a>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      
+        <div class="title">
+          <i class="dropdown icon"></i>
+          <a href="/categories/%E6%97%A5%E8%AE%B0" class="item">日记</a>
+        </div>
+        <div class="content">
+          <div class="ui list">
+          
+            <div class="item">
+              <div class="content">
+                <a href="https://waterjung.github.io/posts/one/" class="item">👗啊莉莉的分享</a>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      
+    </div>
+  </section>
+  
+
+  <section class="ui bottom attached center aligned segment">
+      
+      <p>© 2019 - 2020 🏀WaterJung的博客</p>
+      
+      <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
+  </section>
+</article>
+
+  </div>
+</div>
+
+        </section>
+        <section class="back">
+          
+<nav class="ui secondary inverted menu dream-menu">
+
+  <div class="item">
+    <i class="large link bullseye icon dream-flip-toggle" title="翻转！"></i>
+  </div>
+  <div class="item">
+    <i class="large link home icon" title="首页" onclick="window.location.href = 'https:\/\/waterjung.github.io'"></i>
+  </div>
+  <div class="item">
+    <i id="theme-switch" class="large link icon" onclick="themeSwitch()"></i>
+  </div>
+</nav>
+
+          <div class="ui centered relaxed grid dream-grid dream-back">
+  
+    <section class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+      <article>
+        <div class="ui top attached segment">
+          <h3 class="ui header">关于</h3>
+        </div>
+        <div class="ui attached segment markdown-body">
+          <h2 id="你好我是杨文俊">你好，我是杨文俊</h2>
+<h2 id="这是我的博客">这是我的博客。</h2>
+
+        </div>
+      </article>
+    </section>
+  
+
+  <section class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    <article>
+      <div class="ui top attached segment">
+        <h3 class="ui header">社交链接</h3>
+      </div>
+      <div class="ui attached segment">
+        <nav class="ui secondary menu dream-menu">
+          
+            <div class="item">
+              <a href="mailto:1012940576@qq.com">
+                <i class="large mail icon" title="email"></i>
+              </a>
+            </div>
+          
+
+          
+
+          
+
+          
+
+          
+        </nav>
+      </div>
+    </article>
+  </section>
+
+  <section class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    
+  </section>
+
+  
+  
+</div>
+
+        </section>
+      </div>
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+<script src="/js/semantic.min.js"></script>
+<script src="/js/imagesloaded.pkgd.min.js"></script>
+<script src="/js/masonry.pkgd.min.js"></script>
+<script src="/js/nav.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/theme.js"></script>
+<script src="/js/html2canvas.min.js"></script>
+
+
+
+  </body>
+</html>

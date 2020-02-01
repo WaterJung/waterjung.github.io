@@ -6,10 +6,28 @@
     <description>Recent content in Tags on 🏀WaterJung的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 31 Jan 2020 21:15:25 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 01 Feb 2020 10:15:44 +0800</lastBuildDate>
     
 	<atom:link href="https://waterjung.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>git</title>
+      <link>https://waterjung.github.io/tags/git/</link>
+      <pubDate>Sat, 01 Feb 2020 10:15:44 +0800</pubDate>
+      
+      <guid>https://waterjung.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>个人博客</title>
+      <link>https://waterjung.github.io/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Sat, 01 Feb 2020 10:15:44 +0800</pubDate>
+      
+      <guid>https://waterjung.github.io/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>图片</title>
